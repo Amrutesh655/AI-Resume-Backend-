@@ -14,8 +14,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/api/auth", authRoutes);
-app.use("/api/resume", resumeRoutes);
+app.use("/api/auth", authroutes);
+app.use("/api/resume", resumeroutes);
 
 
 app.get('/',( req,res) =>{
@@ -24,6 +24,6 @@ app.get('/',( req,res) =>{
 
 const port  = process.env.PORT || 5000;
 
-app.listen(5000,() =>{
+app.listen(port,() =>{
     console.log('server is runnning on port 5000');
 });
