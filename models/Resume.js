@@ -28,7 +28,7 @@ const resumeSchema = new mongoose.Schema(
       default: [],
     },
     aiFeedback:{
-        type: String,
+        type: String,gi
         default: "",
     },
   },
